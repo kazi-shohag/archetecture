@@ -6,7 +6,7 @@
     <title>Document</title>
     <style>
         body{
-            width:100%;
+           max-width:1140px ; 
         }
         header{
             text-align: center;
@@ -55,7 +55,61 @@ background: rgb(255, 144, 14);
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
+/* section one style  */
 
+main{
+    max-width: 1140px;
+}
+.feasure{
+    margin-left: 20px;
+}
+.section-one{
+    display: flex;
+    align-items: center;
+}
+.feasure-title{
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+.feasure-descrip{
+    color: rgb(114, 114, 114);
+margin-top: 24px;
+margin-bottom: 24px;
+font-size: 1rem;
+font-weight: 400;
+}
+.images-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 5px;
+    /* max-width:570px; */
+}
+.span{
+    color: rgb(114, 114, 114);
+}
+.span1{
+    color: rgb(19, 19, 19);
+}
+.span2{
+   color: rgb(255, 144, 14);
+}
+
+/* smaller device */
+@media screen and (max-width:576px) {
+    .flex{
+        flex-direction: column;
+    }
+    .images-container img{
+        width: 100%;
+    }
+    .images-container{
+        grid-template-columns: repeat(1, 1fr);
+        /* width: 100%; */
+    }
+    .section-one{
+        flex-direction: column;
+    }
+}
     </style>
 </head>
 <body>
@@ -81,7 +135,22 @@ background: rgb(255, 144, 14);
         </header>
 
 
-    <main></main>
+    <main>
+       <section class="section-one">
+        <div class="images-container">
+            <img src="images/team1.png" alt="">
+            <img src="images/team2.png" alt="">
+            <img src="images/team3.png" alt="">
+            <img src="images/team4.png" alt="">
+        </div>
+        <div class="feasure">
+           <div class="feasure-title"><span class="span">Quick list</span> <span class="span1">of Our</span> <br>
+             <span class="span2">Features</span></div>
+           <div class="feasure-descrip">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</div>
+        <button class="primary-btn">Explore More</button>
+        </div>
+       </section>
+    </main>
 
 
 
