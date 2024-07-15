@@ -93,6 +93,43 @@ font-weight: 400;
 .span2{
    color: rgb(255, 144, 14);
 }
+.section-two{
+    max-width: 1140;
+
+}
+.sub-part{
+    width: 550px;
+height: 150px;
+border-radius: 8px;
+padding: 1.25rem;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+background: rgb(255, 255, 255);
+}
+.text-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    width: 10rem;
+    color: rgb(19, 19, 19);
+}
+.many{
+    width: 35rem;
+}
+.text-describ{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(114, 114, 114);
+}
+.section-two-container{
+    display: flex;
+    margin-top: 20px;
+    gap: 50px;
+}
+.architec{
+    width: 40%;
+}
+.text{
+    margin-top: 50px;
+}
 
 /* smaller device */
 @media screen and (max-width:576px) {
@@ -107,6 +144,12 @@ font-weight: 400;
         /* width: 100%; */
     }
     .section-one{
+        flex-direction: column;
+    }
+    .section-two-container >img{
+        width: 100%;
+    }
+    .section-two-container{
         flex-direction: column;
     }
 }
@@ -135,7 +178,8 @@ font-weight: 400;
         </header>
 
 
-    <main>
+    <main> 
+        <!-- our feasures  -->
        <section class="section-one">
         <div class="images-container">
             <img src="images/team1.png" alt="">
@@ -150,6 +194,37 @@ font-weight: 400;
         <button class="primary-btn">Explore More</button>
         </div>
        </section>
+
+
+       <!-- feasures love and enjoy -->
+        <section class="section-two">
+<div class="section-two-container">
+    <div class="text">
+        <h3 class="text-title">Features you will love & enjoy</h3>
+        <h6 class="text-describ many">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</h6>
+        <div class="sub-part">
+            <h4 class="sub-title">Dexktop & Mobile Version</h4>
+            <p class="text-describ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+
+        </div>
+        <div class="sub-part">
+            <h4 class="sub-title">Drag & Drop Builder</h4>
+            <p class="text-describ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+        </div>
+        <div class="sub-part">
+            <h4 class="sub-title">Awesome Modern Design</h4>
+            <p class="text-describ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+        </div>
+        <div class="sub-part">
+            <h4 class="sub-title">Super Easy to Edit</h4>
+            <p class="text-describ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+        </div>
+        
+    </div>
+    <img class="architec" src="images/architect.png" alt=""> 
+</div>
+
+        </section>
     </main>
 
 
